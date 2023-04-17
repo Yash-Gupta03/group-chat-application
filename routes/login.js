@@ -29,7 +29,8 @@ router.use("/message", (req, res, next) => {
       encoding: "utf8",
       flag: "r",
     })} 
-      <br>
+      <br>const fs = require("fs");
+
       <form action="/save" onsubmit="document.getElementById('username').value=localStorage.getItem('username')" method="POST">
       <input type="text" name="message" />
       <br/>
